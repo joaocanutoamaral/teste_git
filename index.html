@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,8 @@
     <meta name="description" content="Simple landind page" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
@@ -46,22 +48,27 @@
             </svg>
           </button>
         </div>
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-white p-4 lg:p-0 z-20" id="nav-content">
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
-            <li class="mr-3">
-              <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="https://wa.link/0xx4xu">Fale conosco</a>
-            </li>
-            <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="https://wa.link/0xx4xu">agende o seu horario</a>
-            </li>
-            
-          </ul>
-          <button
-            id="navAction"
-            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-          >
-            <a href="https://wa.link/0xx4xu">WhatsApp</a>
-          </button>
+               <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-white p-4 lg:p-0 z-20" id="nav-content">
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-black font-bold no-underline hover:text-white hover:bg-black rounded-full transition duration-300 ease-in-out" href="https://wa.link/0xx4xu">Fale conosco</a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block text-black no-underline font-bold hover:text-white hover:bg-black rounded-full py-2 px-4 transition duration-300 ease-in-out" href="https://wa.link/0xx4xu">Agende o seu horário</a>
+              </li>
+              
+            </ul>
+            <button
+  id="navAction"
+  class="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in-out"
+>
+  <a href="https://wa.link/0xx4xu" class="flex items-center">
+    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+  </a>
+</button>
+          </div>
+          
+
         </div>
       </div>
       <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
@@ -71,16 +78,22 @@
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <!--Left Col-->
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <p class="uppercase tracking-loose w-full">Precisa de uma oficina boa?</p>
+          <p class="uppercase tracking-loose w-full"></p>
           <h1 class="my-4 text-5xl font-bold leading-tight">
             Confiança e qualidade em cada serviço?
           </h1>
           <p class="leading-normal text-2xl mb-8">
-             É na HiTECH, você tem a garantia de um mecânico de confiança que cuida do seu carro como se fosse o dele. Agende sua revisão hoje e sinta a diferença!
+             É na HiTECH, Aqui você tem a garantia de um mecânico de confiança que cuida do seu carro como se fosse o dele. Agende sua revisão hoje e sinta a diferença!
           </p>
-          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            <a href="https://wa.link/0xx4xu">Agendar</a>
-          </button>
+          <a href="https://wa.link/0xx4xu" class="mx-auto lg:mx-0 hover:no-underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Agendar
+        </a>
+        
+        
+          <button class="mx-auto lg:mx-0 hover:underline  text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <a href="https://wa.link/0xx4xu" class="block w-full h-full text-center"></a>
+        </button>
+        
         </div>
         <!--Right Col-->
         <div class="w-full md:w-3/5 py-6 text-center">
@@ -464,9 +477,9 @@
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-start">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              <a href="https://wa.link/0xx4xu">Quero Revisão da suspensão</a> 
-              </button>
+              <button class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <a href="https://wa.link/0xx4xu" class="no-underline hover:no-underline">Quero revisão da suspensão</a>
+            </button>
             </div>
           </div>
         </div>
@@ -487,9 +500,11 @@
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-center">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-             <a href="https://wa.link/0xx4xu">Alinhamento e balanceamento</a>
-              </button>
+              <button class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <a href="https://wa.link/0xx4xu" class="no-underline hover:no-underline">Alinhamento e balanceamento</a>
+            </button>
+          
+          
             </div>
           </div>
         </div>
@@ -510,11 +525,10 @@
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-end">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              <a href="https://wa.link/0xx4xu">Quero minha revisão</a>
-                
-              </button>
-            </div>
+              <button class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <a href="https://wa.link/0xx4xu" class="no-underline hover:no-underline">Quero minha revisão</a>
+            </button> 
+             </div>
           </div>
         </div>
       </div>
@@ -633,9 +647,38 @@
       <h3 class="my-4 text-3xl leading-tight">
         Não deixe para depois o cuidado com seu carro! Agende sua revisão agora e evite surpresas na estrada. Seu tempo vale mais com segurança e tranquilidade.
       </h3>
-      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-        Falar com um especialista
-      </button>
+      <button class="custom-button">
+      <a href="https://wa.link/0xx4xu">Falar com um especialista</a>
+    </button>
+
+    <style>.custom-button {
+      display: inline-block;
+      background-color: #ffffff; /* Cor de fundo padrão */
+      color: #333333; /* Cor do texto */
+      font-weight: bold; /* Fonte em negrito */
+      border-radius: 9999px; /* Bordas arredondadas */
+      padding: 1rem 2rem; /* Espaçamento interno do botão */
+      text-decoration: none; /* Remove o sublinhado do link */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra do botão */
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+      font-size: 1rem; /* Tamanho da fonte */
+      border: none; /* Remove a borda padrão do botão */
+      cursor: pointer; /* Altera o cursor para uma mãozinha */
+  }
+  
+  .custom-button:hover {
+      background-color: #000000; /* Cor de fundo ao passar o mouse */
+      color: #ffffff; /* Cor do texto ao passar o mouse */
+      transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+      text-decoration: none; /* Garante que o sublinhado não apareça */
+  }
+  
+  .custom-button:focus {
+      outline: none; /* Remove o contorno de foco */
+      box-shadow: none; /* Remove a sombra de foco */
+  }
+  </style>
+      
     </section>
     <!--Footer-->
     <footer class="bg-white">
@@ -796,5 +839,6 @@
         return false;
       }
     </script>
+  
   </body>
 </html>
